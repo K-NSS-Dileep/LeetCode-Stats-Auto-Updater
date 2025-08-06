@@ -3,9 +3,9 @@
         <rect x="10" y="10" width="690" height="150" rx="6" ry="6" fill="#1E2526" stroke="#e1e4e8" stroke-width="1"/>
         
         <!-- Total Problems && Global rank -->
-        <text x="26" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">896/3641</text>
+        <text x="26" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">460/3641</text>
         <text x="26" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-transform="uppercase" letter-spacing="0.5">SOLVED</text>
-        <text x="250" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">32777</text>
+        <text x="250" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">183756</text>
         <text x="250" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-transform="uppercase" letter-spacing="0.5">GLOBAL RANK</text>
         
         <!-- Divider -->
@@ -13,11 +13,11 @@
         
         <!-- Difficulty Stats -->
         <text x="26" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#28a745">Easy</text>
-        <text x="290" y="100" font-family="monospace" font-size="14" fill="#28a745">447/888</text>
+        <text x="290" y="100" font-family="monospace" font-size="14" fill="#28a745">164/888</text>
         <text x="26" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#ffc107">Med.</text>
-        <text x="290" y="120" font-family="monospace" font-size="14" fill="#ffc107">411/1894</text>
+        <text x="290" y="120" font-family="monospace" font-size="14" fill="#ffc107">243/1894</text>
         <text x="26" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#dc3545">Hard</text>
-        <text x="290" y="140" font-family="monospace" font-size="14" fill="#dc3545">38/859</text>
+        <text x="290" y="140" font-family="monospace" font-size="14" fill="#dc3545">53/859</text>
         
         <!--Language Count Header-->
         <line x1="360" y1="20" x2="360" y2="150" stroke="#e1e4e8" stroke-width="1"/>
@@ -27,16 +27,16 @@
         
         <!-- Language Count -->
         
-<text x="390" y="80" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Python3</text>
-<text x="550" y="80" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">681</text>
+<text x="390" y="80" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Python</text>
+<text x="550" y="80" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">256</text>
 
 
-<text x="390" y="110" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">C++</text>
-<text x="550" y="110" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">213</text>
+<text x="390" y="110" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Java</text>
+<text x="550" y="110" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">145</text>
 
 
-<text x="390" y="140" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Pandas</text>
-<text x="550" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">9</text>
+<text x="390" y="140" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">MySQL</text>
+<text x="550" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">32</text>
 
 
 </svg>
