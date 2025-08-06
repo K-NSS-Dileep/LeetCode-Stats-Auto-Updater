@@ -15,7 +15,7 @@ jobs:
       - name: Checkout LeetCode-Stats repository
         uses: actions/checkout@v4 # Clones a GitHub Repo
         with:
-          repository: Krishnarevanthkarra/LeetCode-Stats # Repo to Clone
+          repository: K-NSS-Dileep/LeetCode-Stats-Auto-Updater # Repo to Clone
           path: LeetCode-Stats # Saves the cloned repo under the provided name
           token: ${{ secrets.LCToken }}  # Token is used for Authentication instead of passwords
 
@@ -23,8 +23,8 @@ jobs:
       - name: Checkout Krishnarevanthkarra repository
         uses: actions/checkout@v4 # Clones a Github Rep
         with:
-          repository: Krishnarevanthkarra/Krishnarevanthkarra # Rep to clone
-          path: Krishnarevanthkarra # Saves the cloned repo under the provided name
+          repository: K-NSS-Dileep/K-NSS-Dileep # Rep to clone
+          path: K-NSS-Dileep # Saves the cloned repo under the provided name
           token: ${{ secrets.LCToken }} # Token is used for Authentication instead of passwords
 
       #  Set up Python
@@ -57,7 +57,7 @@ jobs:
       # Commit and push README.md to Krishnarevanthkarra
       - name: Commit and push README.md to Krishnarevanthkarra
         run: |
-          cd Krishnarevanthkarra
+          cd K-NSS-Dileep
           git config user.name "GitHub Action"
           git config user.email "action@github.com"
           git add README.md
