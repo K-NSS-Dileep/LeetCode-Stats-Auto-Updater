@@ -21,7 +21,7 @@ class LeetCodeStats(BaseModel):
     languages_used: list
 
 #configuration
-leetcode_username = "Krishna_Revanth_Karra"
+leetcode_username = "Dileep_Karra"
 graphql_url = "https://leetcode.com/graphql"
 query = """query($username: String!){
                 matchedUser(username: $username){
@@ -169,10 +169,10 @@ if __name__ == '__main__':
         print("Written in Display.svg successfully")
     
     base_url = """<img align="center"
-                src ="https://raw.githubusercontent.com/Krishnarevanthkarra/LeetCode-Stats-Auto-Updater/main/Display.svg?cache_bust={}"
+                src ="https://raw.githubusercontent.com/K-NSS-Dileep/LeetCode-Stats-Auto-Updater/main/Display.svg?cache_bust={}"
                 alt ="LeetCodeStats"
                 />"""
-    readme_path = os.path.join("Krishnarevanthkarra", "README.md")
+    readme_path = os.path.join("K-NSS-Dileep", "README.md")
 
 
     with open(readme_path, "r") as file:
@@ -192,3 +192,4 @@ if __name__ == '__main__':
         file.write(updated_content)
     print('LeetCode stats updated successfully.')
  
+
