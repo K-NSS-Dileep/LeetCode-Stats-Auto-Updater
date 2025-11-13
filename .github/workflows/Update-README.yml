@@ -19,14 +19,6 @@ jobs:
           path: LeetCode-Stats # Saves the cloned repo under the provided name
           token: ${{ secrets.LCToken }}  # Token is used for Authentication instead of passwords
 
-      # Checkout Krishnarevanthkarra (where README.md lives)
-      - name: Checkout Krishnarevanthkarra repository
-        uses: actions/checkout@v4 # Clones a Github Rep
-        with:
-          repository: K-NSS-Dileep/K-NSS-Dileep # Rep to clone
-          path: K-NSS-Dileep # Saves the cloned repo under the provided name
-          token: ${{ secrets.LCToken }} # Token is used for Authentication instead of passwords
-
       #  Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5 # Set ups a clean python environment
@@ -42,7 +34,8 @@ jobs:
       # Run script to update Display.svg and README.md
       - name: Run Update Script
         run: |
-          python LeetCode-Stats/app.py
+          cd LeetCode-Stats
+          python app.py
 
       # Commit and push Display.svg to LeetCode-Stats
       - name: Commit Display.svg to LeetCode-Stats
@@ -52,14 +45,4 @@ jobs:
           git config user.email "action@github.com"
           git add Display.svg
           git diff --quiet && git diff --staged --quiet || git commit -m "Update Display.svg"
-          git push origin main
-
-      # Commit and push README.md to Krishnarevanthkarra
-      - name: Commit and push README.md to Krishnarevanthkarra
-        run: |
-          cd K-NSS-Dileep
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update LeetCode Stats in README"
           git push origin main
