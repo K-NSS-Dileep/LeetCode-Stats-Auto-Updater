@@ -1,11 +1,8 @@
 #Importing Required Libraries
 from pydantic import BaseModel
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Template
 import requests
 import json
-import re
-import time
-import os
 
 #class for easy access of stats
 class LeetCodeStats(BaseModel):
@@ -146,9 +143,9 @@ def generate_lang_count(stats: LeetCodeStats) -> str:
 
     
 def generate_stats_svg(stats: LeetCodeStats) -> str:
-    template_dir = os.path.dirname(os.path.abspath(__file__))
-    env = Environment(loader = FileSystemLoader(template_dir))
-    template = env.get_template('Design.svg')
+    with open('Design.svg', 'r', encoding = 'utf-8') as design:
+        svg_text = design.read()
+    template = Template(svg_text)
     rendered_svg = template.render(stats = stats, dynamic_change = generate_lang_count(stats))
     return rendered_svg
 
@@ -161,35 +158,10 @@ if __name__ == '__main__':
         print("Generated SVG is empty. Check template or stats.")
     else:
         print("Generated SVG successfully.")
-    
-    svg_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Display.svg")
-    print(f"Saving to {svg_file_path}")
-    with open(svg_file_path, "w") as file:
+        
+    with open('Display.svg', 'w', 'encoding='utf-8') as file:
         file.write(generated_design)
         print("Written in Display.svg successfully")
-    
-    base_url = """<img align="center"
-                src ="https://raw.githubusercontent.com/K-NSS-Dileep/LeetCode-Stats-Auto-Updater/main/Display.svg?cache_bust={}"
-                alt ="LeetCodeStats"
-                />"""
-    readme_path = os.path.join("K-NSS-Dileep", "README.md")
-
-
-    with open(readme_path, "r") as file:
-        content = file.read()
-
-    timestamp = int(time.time())
-    new_content = base_url.format(timestamp)
-    start_tag = "<!-- LEETCODE_STATS_START -->"
-    end_tag = "<!-- LEETCODE_STATS_END -->"
-
-    # Replace content between start and end tags
-    pattern = f"{start_tag}.*?{end_tag}"
-    updated_content = re.sub(pattern, f"{start_tag}\n{new_content}\n{end_tag}", content, flags=re.DOTALL)
-
-    # Write the updated content back to README.md
-    with open(readme_path, "w") as file:
-        file.write(updated_content)
-    print('LeetCode stats updated successfully.')
  
+
 
