@@ -3,9 +3,9 @@
         <rect x="10" y="10" width="690" height="150" rx="6" ry="6" fill="#1E2526" stroke="#e1e4e8" stroke-width="1"/>
         
         <!-- Total Problems && Global rank -->
-        <text x="26" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">647/3749</text>
+        <text x="26" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">649/3749</text>
         <text x="26" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-transform="uppercase" letter-spacing="0.5">SOLVED</text>
-        <text x="250" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">92585</text>
+        <text x="250" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">91892</text>
         <text x="250" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-transform="uppercase" letter-spacing="0.5">GLOBAL RANK</text>
         
         <!-- Divider -->
@@ -13,9 +13,9 @@
         
         <!-- Difficulty Stats -->
         <text x="26" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#28a745">Easy</text>
-        <text x="290" y="100" font-family="monospace" font-size="14" fill="#28a745">227/913</text>
+        <text x="290" y="100" font-family="monospace" font-size="14" fill="#28a745">228/913</text>
         <text x="26" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#ffc107">Med.</text>
-        <text x="290" y="120" font-family="monospace" font-size="14" fill="#ffc107">343/1951</text>
+        <text x="290" y="120" font-family="monospace" font-size="14" fill="#ffc107">344/1951</text>
         <text x="26" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#dc3545">Hard</text>
         <text x="290" y="140" font-family="monospace" font-size="14" fill="#dc3545">77/885</text>
         
@@ -32,11 +32,11 @@
 
 
 <text x="390" y="110" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">Java</text>
-<text x="550" y="110" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">244</text>
+<text x="550" y="110" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">245</text>
 
 
 <text x="390" y="140" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">MySQL</text>
-<text x="550" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">57</text>
+<text x="550" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">58</text>
 
 
 </svg>
