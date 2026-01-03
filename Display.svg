@@ -3,9 +3,9 @@
         <rect x="10" y="10" width="690" height="150" rx="6" ry="6" fill="#1E2526" stroke="#e1e4e8" stroke-width="1"/>
         
         <!-- Total Problems && Global rank -->
-        <text x="26" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">661/3792</text>
+        <text x="26" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">661/3793</text>
         <text x="26" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-transform="uppercase" letter-spacing="0.5">SOLVED</text>
-        <text x="250" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">90442</text>
+        <text x="250" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#ffffff">90522</text>
         <text x="250" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-transform="uppercase" letter-spacing="0.5">GLOBAL RANK</text>
         
         <!-- Divider -->
@@ -13,7 +13,7 @@
         
         <!-- Difficulty Stats -->
         <text x="26" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#28a745">Easy</text>
-        <text x="290" y="100" font-family="monospace" font-size="14" fill="#28a745">231/918</text>
+        <text x="290" y="100" font-family="monospace" font-size="14" fill="#28a745">231/919</text>
         <text x="26" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#ffc107">Med.</text>
         <text x="290" y="120" font-family="monospace" font-size="14" fill="#ffc107">350/1978</text>
         <text x="26" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#dc3545">Hard</text>
